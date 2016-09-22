@@ -31,7 +31,7 @@ def create_tenant(modir, tenant_name):
 
     # Commit the change using a ConfigRequest object
     configReq = ConfigRequest()
-    configReq.addMo(policy_universe)
+    configReq.addMo(fvTenant)
     modir.commit(configReq)
 pass
 
